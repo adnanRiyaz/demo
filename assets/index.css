@@ -1,0 +1,39 @@
+#navtext{
+    color:white;
+    font-family: Pacifico;
+    font-size: 32px;
+}
+.form-label{
+    font-family: Cookie;
+    font-size: 28px;
+}
+
+.box{
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    
+}
+#card{
+    border: 2px solid black;
+    margin-bottom: 10px;
+    height: 180px;
+    align-items: center;
+}
+#cardname{
+font-weight: 900;
+font-family: 'Pacifico';
+font-size:large;
+border-bottom: 1px solid gray;
+text-decoration: none;
+}
+a{
+    text-decoration: none;
+}
+
+
+#emp{
+    font-size: 33px;
+    font-family: Russo One;
+}

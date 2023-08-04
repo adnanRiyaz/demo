@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous" />
+    <link
+        href="https://fonts.googleapis.com/css?family=Baloo|Roboto|Cookie|Kaushan Script|Pacifico|Sacramento|Patrick Hand|Luckiest Guy|Handlee|Russo One|Changa|Orbitron|Mali|Poiret One"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/index.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="/page" id="navtext">Attendance System</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+
+            </button>
+
+
+        </div>
+    </nav>
+
+
+    <div class="row">
+        <h4 style="text-align:center;padding-top: 20px;font-family: Pacifico;">Welcome to Dashboard </h4>
+
+    </div>
+    <div class="container ">
+        <!-- <p style="   text-align: -webkit-right;"><a id="lobtn" href="/login">LogOut</a></p> -->
+
+
+        <div class="box mt-4">
+            <%for(let product of products){%>
+
+                <div id="item">
+                    <div id="card" class="card">
+                        <img id="pi" src="<%=product.avatar%>" class="card-img" alt="">
+                        <div class="card-body">
+                            <a class="card-title" id="cardname" style="text-decoration: none;"
+                                href="/products/<%=product.id%>">
+                                <%= product.first_name %>
+                            </a>
+
+                        </div>
+                    </div>
+                </div>
+
+                <%}%>
+        </div>
+
+
+
+    </div>
+
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js"
+        integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
